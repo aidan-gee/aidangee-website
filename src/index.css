@@ -6,6 +6,10 @@ body {
 
 }
 
+.no-margin {
+  margin: 0;
+}
+
 .title-wrapper {
   width:80%;
   position: fixed;
@@ -24,5 +28,22 @@ body {
   letter-spacing: 0.01em;
   text-transform: uppercase;
   text-align: center;
+}
+
+@media (max-width: 600px) {
+  .title-wrapper h1{
+    font-size: 60px;
+    line-height: 68px;
+  }
+}
+
+@media (max-width: 400px) {
+  .title-wrapper {
+    width:90%;
+  }
+  .title-wrapper h1{
+    font-size: 40px;
+    line-height: 50px;
+  }
 }
 
